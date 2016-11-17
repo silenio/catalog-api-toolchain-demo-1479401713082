@@ -9,7 +9,7 @@ var appEnv = cfenv.getAppEnv();
 cloudantService = appEnv.getService("myMicroservicesCloudant");
 var items = require('./routes/items');
 
-//Setup middleware.
+//Setup Silenio middleware.
 var app = express();
 app.use(cors());
 app.use(bodyParser.json());
